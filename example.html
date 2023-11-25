@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="example.js"></script>
+
+	<style type="text/css">
+		
+		body {
+			font-family: sans-serif;
+			font-size: 25px;
+			margin: 0;
+		}
+
+		header {
+			text-align: center;
+			background-color: #E8E8E8;
+
+		}
+
+		#logo {
+			height: 150px;
+		}
+
+		nav {
+		float: left;
+        width: 15%;
+        background: #ccc;
+        padding: 20px;
+        height: 100vh;
+		}
+
+		section	{
+			background-color: #FF1E1E;
+			height: 75px;
+			padding: 1px;
+		}
+
+		article {
+        	margin-left: 20%;
+        	padding: 20px;
+		}
+
+		#dulce {
+			height: 400px;
+		}
+	</style>
+
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var saludoElemento = document.getElementById('saludo');
+            var fecha = new Date();
+            var hora = fecha.getHours();
+
+            if (hora >= 5 && hora < 12) {
+                saludoElemento.textContent = 'Buenos días';
+            } else if (hora >= 12 && hora < 18) {
+                saludoElemento.textContent = 'Buenas tardes';
+            } else {
+                saludoElemento.textContent = 'Buenas noches';
+            }
+            	saludoElemento.textContent +=', aquí encontrarás todos los caballos y yeguas de Paso Fino MM.';
+        });
+    </script>
+
+	<header><a href="pfmm.html"><img src="pfmm.png" id="logo"></a></header>	
+</head>
+<body>
+	<section>
+<p id="saludo" style="text-align: center;"></p>
+	</section>
+
+<div id="caballos">
+	<nav>
+    <ul>
+<p><a href="dulceimpacto.html">Dulce Impacto de la Querencia</a></p>
+<p><a href="fortuna.html">Fortuna de HH</a></p>
+<p><a href="dulceesperanza.html">Dulce Esperanza de HH</a></p>
+<p><a href="catedra.html">Cátedra MM</a></p>
+<p><a href="dulcemoraleja.html">Dulce Moraleja MM</a></p>
+<p><a href="maraca.html">Maraca de HH</a></p>
+<p><a href="ducado.html">Ducado MM</a></p>
+<p><a href="alabama.html">Alabama MM</a></p>
+<p><a href="fragola.html">Fragola MM</a></p>
+<p><a href="legado.html">Legado MM</a></p>
+<p><a href="innovacion.html">Innovación de HH</a></p>
+	</ul>
+	</nav>
+</div>
+		<article>
+	<h1>Example</h1>
+	<p id="edad"></p>
+	<p><img src="p.png" id="dulce"></p>
+		</article>
+</body>
+</html>
